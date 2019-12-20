@@ -1,3 +1,41 @@
-body{
-    display:flex
+body{ margin: 0;}
+#size {width: 50%;
+    height: 50%;
+    margin-right: 10px;
+    float: left;
+    clear: both;
+}
+
+.headlinks{
+    float: right;
+    width:12%;
+    margin-top: 40px;
+}
+
+#Name{float: left;
+width: 50%;
+margin-left: 20px;
+margin-top: 30px;}
+
+.block{
+    background-color: teal;
+    height:100px;
+
+}
+
+.maincontainer {
+border: solid 1px black ;
+   width: 80%;
+   margin-right: 10%x;
+margin-left: 10%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   padding: 5px;
+}
+
+p {}
+
+.footer{height:70px;
+    width: 100%;
+    background-color: teal ;
 }
