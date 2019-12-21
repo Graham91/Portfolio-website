@@ -1,11 +1,15 @@
-body{ margin: 0;}
+#page-conatiner {
+    position: relative;
+    min-height: 100vh;
+}
+body{ margin: 0;
+}
 #size {width: 50%;
     height: 50%;
     margin-right: 10px;
     float: left;
     clear: both;
 }
-
 .headlinks{
     float: right;
     width:12%;
@@ -26,12 +30,12 @@ font-family: 'times';}
 .block2{
     background-color: rgb(187, 187, 187);
     height:100px;
+    overflow: hidden;
 }
 #Name2{
     width: 25%;
     float:left;
-    position: relative;
-    bottom:22px;
+    margin: 0;
     margin-left: 10%;
     font-family: 'times';
     text-align: center;
@@ -49,27 +53,51 @@ font-family: 'times';}
    margin-top: 10px;
    margin-bottom: 10px;
    padding: 5px;
+   margin-bottom: 70px;
 }
 
 p {line-height: 20px;}
 
-.footer{height:70px;
+.footer2{height:70px;
     width: 100%;
     background-color: teal;
+    position: absolute;
+    bottom: 0;
 }
+.footer{height:70px;
+    width: 100%;
+    background-color: teal;}
 .name33{
     width:100%;
 }
+.name36{
+    width:100%;
+}
+
 .heightbox{
     height:200px;
 }
 .maincontainer2 {
     border: solid 1px black ;
      width: 80%;
-     margin-right: 10%x;
+     margin-right: 10%;
      margin-left: 10%;
      margin-top: 10px;
      margin-bottom: 10px;
-     padding: 5px;
+     padding: 15px;
   }
-  
+.footpadding{height: 70px;
+margin:0;}
+
+@media screen and (min-width: 600px)  {
+.name33{
+    width: 475px;
+    text-align: left;
+}
+.name35{
+    text-align: left;
+}
+.name36{
+    width:100% !important;
+}
+}
