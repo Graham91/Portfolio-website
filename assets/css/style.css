@@ -15,27 +15,61 @@ body{ margin: 0;}
 #Name{float: left;
 width: 50%;
 margin-left: 20px;
-margin-top: 30px;}
+margin-top: 30px;
+font-family: 'times';}
 
 .block{
     background-color: teal;
     height:100px;
 
 }
+.block2{
+    background-color: rgb(187, 187, 187);
+    height:100px;
+}
+#Name2{
+    width: 25%;
+    float:left;
+    position: relative;
+    bottom:22px;
+    margin-left: 10%;
+    font-family: 'times';
+    text-align: center;
+    height: 100px;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
 
 .maincontainer {
-border: solid 1px black ;
+  border: solid 1px black ;
    width: 80%;
    margin-right: 10%x;
-margin-left: 10%;
+   margin-left: 10%;
    margin-top: 10px;
    margin-bottom: 10px;
    padding: 5px;
 }
 
-p {}
+p {line-height: 20px;}
 
 .footer{height:70px;
     width: 100%;
-    background-color: teal ;
+    background-color: teal;
 }
+.name33{
+    width:100%;
+}
+.heightbox{
+    height:200px;
+}
+.maincontainer2 {
+    border: solid 1px black ;
+     width: 80%;
+     margin-right: 10%x;
+     margin-left: 10%;
+     margin-top: 10px;
+     margin-bottom: 10px;
+     padding: 5px;
+  }
+  
