@@ -3,8 +3,11 @@
     min-height: 100vh;
 }
 body{ margin: 0 ;
+    background-color: rgb(235, 233, 233);
 
 }
+H2 {color: teal;}
+
 #size {width: 50%;
     height: 50%;
     margin-right: 10px;
@@ -12,16 +15,20 @@ body{ margin: 0 ;
     clear: both;
 }
 .headlinks{
+    text-decoration: none;
     float: right;
     width:12%;
     margin-top: 40px;
+    padding:5px;
+    font-size: 1.1em;
 }
 
 #Name{float: left;
 width: 50%;
 margin-left: 20px;
 margin-top: 30px;
-font-family: 'times';}
+font-family: 'times';
+color:rgb(235, 233, 233);}
 
 .block{
     background-color: teal;
@@ -44,13 +51,14 @@ font-family: 'times';}
     background-color: teal;
     display: flex;
     align-items: center;
-    justify-content: center;}
+    justify-content: center;
+    color:rgb(235, 233, 233);}
 
-.maincontainer {
+.maincontainer3 {
   border: solid 1px black ;
-   width: 80%;
+   width: 960px;
    margin-right: auto;
-   margin-left: auto;
+   margin-left: 10%;
    margin-top: 10px;
    margin-bottom: 10px;
    padding: 5px;
@@ -70,6 +78,12 @@ p {line-height: 20px;}
 .footer{height:70px;
     width: 100%;
     background-color: teal;}
+
+    .footerextra{background-color: grey;
+     height: 5px;
+    width:100%;
+    z-index: 20;}
+    
 .name33{
     width:100%;
 }
@@ -91,6 +105,27 @@ p {line-height: 20px;}
   }
 .footpadding{height: 70px;
 margin:0;}
+
+.picture{ 
+    float:left;
+    padding: 10px 25px;
+}
+
+.endpic{
+    clear: both;
+    height: 250px;
+    width:100%;
+
+}
+.Label{
+   position: relative;
+    background-color: teal;
+bottom: 65px;
+padding: 15px;
+color:rgb(235, 233, 233);
+font-weight: bold;
+line-height: 20px;
+}
 
 @media screen and (min-width: 600px)  {
 .name33{
