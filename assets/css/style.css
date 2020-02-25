@@ -53,17 +53,23 @@ color:rgb(235, 233, 233);}
     align-items: center;
     justify-content: center;
     color:rgb(235, 233, 233);}
-
+#flexboxdiv{
+display:flex;
+justify-content: center;
+flex-wrap: wrap;
+}
 .maincontainer3 {
   border: solid 1px black ;
-   width: 960px;
-   margin-right: auto;
-   margin-left: 10%;
-   margin-top: 10px;
+  width: 80%;
+  max-width: 960px;
+   
+  margin-left: 10%;
+ margin-top: 10px;
    margin-bottom: 10px;
    padding: 5px;
-   margin-bottom: 70px;
-   max-width: 960px;
+   margin-bottom: 70px; 
+  
+   
 
 }
 
@@ -107,16 +113,23 @@ p {line-height: 20px;}
 margin:0;}
 
 .picture{ 
-    float:left;
+    /* float:left; */
     padding: 10px 25px;
-}
 
-.endpic{
+}
+.picturesize{
+    height: 214px;
+    width: 380px;
+    border-style: solid;
+    border-radius: 3px;
+}
+/* .endpic{
     clear: both;
     height: 250px;
     width:100%;
+    display: flexbox;
 
-}
+} */
 .Label{
    position: relative;
     background-color: teal;
@@ -126,6 +139,89 @@ color:rgb(235, 233, 233);
 font-weight: bold;
 line-height: 20px;
 }
+.Labelwithsite{
+    position: relative;
+    bottom: 65px;
+    display: flex;
+    max-width: 382px;
+    
+
+}
+.Label1{
+    float:left;
+    padding: 15px;
+    padding-left: 40px;
+    background-color: teal;
+font-weight: bold;
+color:rgb(235, 233, 233);
+line-height: 20px;
+width:50%;
+letter-spacing: 1px;
+text-decoration: none;
+   
+}
+.Label1:hover {
+    background-color: rgb(121, 170, 172);
+  }
+  .Label2:hover {
+    background-color: rgb(121, 170, 172);
+  }
+.Label2{
+    text-align: right;
+    padding: 15px;
+    padding-right: 20px;
+    background-color: teal;
+    font-weight: bold;
+    color:rgb(235, 233, 233);
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    width: 50%;
+    
+    
+}
+.footer2{height:70px;
+    width: 100%;
+    background-color: teal;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+
+.dropbtn {
+    background-color:teal;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    width:100%;
+    text-align: center;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+ 
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown-content a:hover {background-color: rgb(121, 170, 172)}
 
 @media screen and (min-width: 600px)  {
 .name33{
