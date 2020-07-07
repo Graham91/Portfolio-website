@@ -4,8 +4,16 @@
 }
 body {
   margin: 0;
-  background-color: rgb(253, 253, 253);
+
+  background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    118deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(214, 214, 214) 100%
+  );
 }
+
 .titleOfPage {
   width: 100%;
   color: transparent;
@@ -460,7 +468,10 @@ body {
   /* flex-wrap: wrap; */
 }
 .maincontainer3 {
-  /* border: solid 1px black; */
+  border-top: solid 2px rgb(204, 204, 204);
+  border-bottom: solid 2px rgb(204, 204, 204);
+  border-radius: 25px;
+  border-right: solid 2px rgb(204, 204, 204);
   width: 95%;
   margin: 110px auto;
   /* max-width: 960px; */
@@ -533,17 +544,43 @@ p {
   position: relative;
   transition-duration: 0.5s;
   display: inline-block;
+  width: 400px;
+  height: 225px;
   /* float:left; */
   /* padding: 10px 25px; */
   /* justify-content: space-between; */
   margin: 30px;
 }
 .picturesize {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 214px;
   width: 380px;
   border: solid 1px rgb(204, 204, 204);
   border-radius: 3px;
 }
+.hide {
+  display: block;
+  visibility: hidden;
+}
+.mimicdetails {
+  position: relative;
+}
+.postionRelative {
+  position: relative;
+}
+.fixStupidFlicker {
+  display: none;
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  height: 214px;
+  width: 380px;
+  z-index: 10;
+  opacity: 1;
+}
+
 /* .picturesize:hover {
   height: 200px;
   width: 366px;
@@ -594,8 +631,8 @@ p {
   -moz-background-clip: text;
   background-clip: text;
   text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
-  position: relative;
-  top: -260px;
+  position: absolute;
+  top: 0px;
   left: 0;
   overflow-y: hidden;
   overflow: hidden;
@@ -608,6 +645,12 @@ p {
   transition-timing-function: cubic-bezier(1, 1, 1, 1);
   z-index: -1;
 }
+.details2 {
+  position: relative;
+  max-height: 0;
+  overflow-y: hidden;
+  overflow: hidden;
+}
 .Label {
   position: relative;
   background-color: rgb(253, 253, 253);
@@ -618,8 +661,10 @@ p {
   line-height: 20px;
 }
 .Labelwithsite {
-  position: relative;
-  bottom: 65px;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 384px;
   display: flex;
   max-width: 382px;
 }
