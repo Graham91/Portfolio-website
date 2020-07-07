@@ -4,7 +4,6 @@
 }
 body {
   margin: 0;
-
   background: rgb(255, 255, 255);
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -491,6 +490,7 @@ body {
   opacity: 0.5;
   transition-duration: 0.5s;
   z-index: -1;
+  border-radius: 3px;
 }
 p {
   line-height: 20px;
@@ -552,6 +552,7 @@ p {
   margin: 30px;
 }
 .picturesize {
+  transition-duration: 0.5s;
   position: absolute;
   top: 0;
   left: 0;
@@ -667,6 +668,7 @@ p {
   width: 384px;
   display: flex;
   max-width: 382px;
+  transition-duration: 0.5s;
 }
 .Label1 {
   float: left;
