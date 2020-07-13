@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: Candara;
   overflow-x: hidden;
-  background-color: rgb(93, 99, 94);
+  background-color: rgb(158, 163, 159);
   /* background: rgb(255, 255, 255);
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -42,13 +42,13 @@ body {
   left: -9999px;
   right: -9999px;
   margin: auto;
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .titleImage2 {
   height: 120px;
   margin-left: calc(1vw - 400px);
-  opacity: 0.4;
+  opacity: 0.8;
 }
 
 .titleImage3 {
@@ -66,52 +66,56 @@ body {
   opacity: 1;
 }
 .leftsidebar {
-  z-index: 100;
-  position: absolute;
-  width: 60px;
-  top: 150px;
+  z-index: 1;
+  position: fixed;
+  width: 4%;
+  top: 0;
+  /* top: 150px; */
   background-color: rgb(93, 99, 94);
-  height: 100%;
+  height: 100vh;
   /* border-right: solid 1px black; */
 }
 .sectionheaderimage {
+  text-align: center;
   height: 175px;
-  margin-left: 25px;
+  margin: 27px;
 }
 .leftsideshadow {
-  position: absolute;
+  position: fixed;
   width: 60px;
-  top: 210px;
-  left: 60px;
+  top: 0;
+  left: 4%;
   background-color: black;
   opacity: 0.5;
   height: 100%;
-  z-index: 100;
+  z-index: -1;
 }
 .rightsidebar {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   right: 0;
-  width: 61px;
-  top: 150px;
+  width: 4%;
+  top: 0;
   background-color: rgb(93, 99, 94);
   height: 100%;
+  z-index: -1;
   /* border-left: solid 1px black; */
 }
 .rightsidebar2 {
   z-index: 99;
-  position: absolute;
-  right: 61px;
+  position: fixed;
+  right: 4%;
   width: 18px;
-  top: 150px;
+  top: 0;
   background-color: rgb(71, 76, 72);
   height: 100%;
+  z-index: -1;
   /* border-left: solid 1px black; */
 }
 .rightsidebar3 {
   z-index: 100;
   position: absolute;
-  right: 61px;
+  right: 4%;
   width: 18px;
   top: 150px;
   background-color: black;
@@ -412,9 +416,9 @@ body {
 
 .bottomShadow11 {
   top: 150px;
-  left: 0px;
+  left: calc(4% + 60px);
   position: absolute;
-  width: calc(60% - 2.5px);
+  width: calc(56% - 62.5px);
   height: 60px;
   background-color: black;
   opacity: 0.5;
@@ -518,7 +522,7 @@ body {
 
 .demotext {
   width: 100%;
-  color: rgb(71, 76, 72);
+  color: rgb(55, 61, 57);
   margin: 0 auto;
   font-size: 2em;
   text-align: center;
@@ -585,8 +589,6 @@ body {
 
   height: 500px;
   width: 95%;
-  background-color: blueviolet;
-  opacity: 0.1;
 }
 
 .body3 {
@@ -598,9 +600,8 @@ body {
   margin-right: auto;
   height: 500px;
   width: 95%;
-  background-color: crimson;
+
   left: 0px;
-  opacity: 0.1;
 }
 
 .left {
