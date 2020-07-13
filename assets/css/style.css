@@ -4,21 +4,152 @@
 }
 body {
   margin: 0;
+  font-family: Candara;
+  overflow-x: hidden;
+  background-color: rgb(93, 99, 94);
+  /* background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    118deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgb(214, 214, 214) 100%
+  ); */
+  /* background-image: url("https://i.imgur.com/mS880Ht.jpg"); */
+  /* background-size: 100%; */
+  /* background-position: 0px 100px; */
+  /* background-repeat: no-repeat; */
+  /* background-attachment: fixed; */
+}
+.outsidediv {
+  /* position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+  opacity: 0.9;
   background: rgb(255, 255, 255);
   background: rgb(255, 255, 255);
   background: linear-gradient(
     118deg,
     rgba(255, 255, 255, 1) 0%,
     rgb(214, 214, 214) 100%
-  );
+  ); */
+}
+.titleImage {
+  height: 120px;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  opacity: 0.4;
 }
 
+.titleImage2 {
+  height: 120px;
+  margin-left: calc(1vw - 400px);
+  opacity: 0.4;
+}
+
+.titleImage3 {
+  height: 80px;
+  opacity: 0.9;
+}
+.imagediv {
+  width: calc(60vw - 45px);
+  margin: 15px;
+  height: 120px;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  background-color: rgb(93, 99, 94);
+  opacity: 1;
+}
+.leftsidebar {
+  z-index: 100;
+  position: absolute;
+  width: 60px;
+  top: 150px;
+  background-color: rgb(93, 99, 94);
+  height: 100%;
+  /* border-right: solid 1px black; */
+}
+.sectionheaderimage {
+  height: 175px;
+  margin-left: 25px;
+}
+.leftsideshadow {
+  position: absolute;
+  width: 60px;
+  top: 210px;
+  left: 60px;
+  background-color: black;
+  opacity: 0.5;
+  height: 100%;
+  z-index: 100;
+}
+.rightsidebar {
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  width: 61px;
+  top: 150px;
+  background-color: rgb(93, 99, 94);
+  height: 100%;
+  /* border-left: solid 1px black; */
+}
+.rightsidebar2 {
+  z-index: 99;
+  position: absolute;
+  right: 61px;
+  width: 18px;
+  top: 150px;
+  background-color: rgb(71, 76, 72);
+  height: 100%;
+  /* border-left: solid 1px black; */
+}
+.rightsidebar3 {
+  z-index: 100;
+  position: absolute;
+  right: 61px;
+  width: 18px;
+  top: 150px;
+  background-color: black;
+  height: 60px;
+  opacity: 0.5;
+  /* border-left: solid 1px black; */
+}
+
+.imagediv2 {
+  width: calc(100% - 28px);
+  margin: 15px;
+  height: 120px;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  background-color: rgb(93, 99, 94);
+  opacity: 1;
+}
+.imagediv3 {
+  width: calc(100% - 285px);
+  margin-left: 215px;
+  margin-top: 0px;
+  height: 80px;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  background-color: rgb(93, 99, 94);
+  opacity: 0.3;
+}
 .titleOfPage {
   width: 100%;
+  height: 100px;
   color: transparent;
   margin: 0 auto;
   font-size: 3em;
-  text-align: center;
+  text-align: left;
+  padding-left: 30px;
+
   /* position: absolute; */
   /* top: 50%; */
 
@@ -31,6 +162,7 @@ body {
   -moz-background-clip: text;
   background-clip: text;
   text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  background-color: black;
 }
 body {
   margin: 0px;
@@ -56,9 +188,9 @@ body {
   position: relative;
   width: 50%;
   height: 150px;
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(93, 99, 94);
   /* border-right: solid 1px rgb(204, 204, 204); */
-  border-bottom: solid 1px black;
+  /* border-bottom: solid 1px black; */
 }
 
 .titleText {
@@ -84,17 +216,22 @@ body {
   position: relative;
   width: 10%;
   height: 150px;
-  background-color: rgb(253, 253, 253);
-  border-left: solid 1px rgb(204, 204, 204);
-  border-bottom: solid 1px black;
+  background-color: rgb(93, 99, 94);
+  border-left: solid 1px rgb(71, 76, 72);
+  /* border-bottom: solid 1px black; */
 }
-
+.titlebox {
+  background-color: rgb(93, 99, 94);
+  display: flex;
+  width: 100%;
+  height: 90px;
+}
 .navKeynonmove {
   position: relative;
   width: 10%;
   height: 150px;
-  background-color: rgb(253, 253, 253);
-  border-bottom: solid 1px black;
+  background-color: rgb(93, 99, 94);
+  /* border-bottom: solid 1px black; */
 }
 
 .hoverside {
@@ -110,7 +247,7 @@ body {
 .barside1 {
   position: absolute;
   top: 0;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(71, 76, 72);
 }
 
 .barside2 {
@@ -119,13 +256,13 @@ body {
   width: 3px;
   right: 0;
   height: 145px;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(71, 76, 72);
 }
 
 .barside3 {
   position: absolute;
   top: 0;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(71, 76, 72);
 }
 
 .barside4 {
@@ -134,7 +271,7 @@ body {
   width: 6px;
   right: 0;
   height: 140px;
-  background-color: rgb(223, 223, 223);
+  background-color: rgb(71, 76, 72);
 }
 
 .triangle1 {
@@ -145,7 +282,7 @@ body {
   height: 0;
   border-style: solid;
   border-width: 0 3px 5px 0;
-  border-color: transparent rgb(223, 223, 223) transparent transparent;
+  border-color: transparent rgb(71, 76, 72) transparent transparent;
 }
 
 .triangle2 {
@@ -156,7 +293,7 @@ body {
   top: 140px;
   border-style: solid;
   border-width: 0 6px 10px 0;
-  border-color: transparent rgb(223, 223, 223) transparent transparent;
+  border-color: transparent rgb(71, 76, 72) transparent transparent;
 }
 
 .hoverShadow {
@@ -376,12 +513,12 @@ body {
 }
 
 #endkey {
-  border-left: solid 1px rgb(204, 204, 204);
+  border-left: solid 1px rgb(71, 76, 72);
 }
 
 .demotext {
   width: 100%;
-  color: transparent;
+  color: rgb(71, 76, 72);
   margin: 0 auto;
   font-size: 2em;
   text-align: center;
@@ -390,14 +527,14 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: auto auto;
-  background: #666666;
+  /* background: #666666;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5); */
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1200px) {
   .demotext {
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -427,6 +564,58 @@ body {
 .headlinks:hover {
   color: white;
   background-color: grey;
+}
+.body1 {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body2 {
+  top: 250px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  height: 500px;
+  width: 95%;
+  background-color: blueviolet;
+  opacity: 0.1;
+}
+
+.body3 {
+  top: 250px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 500px;
+  width: 95%;
+  background-color: crimson;
+  left: 0px;
+  opacity: 0.1;
+}
+
+.left {
+  position: absolute;
+  left: -9999px;
+}
+
+.right {
+  position: absolute;
+  right: -9999px;
+}
+
+.transition {
+  transition: ease-in-out;
+  transition-duration: 2s;
 }
 
 #Name {
@@ -467,12 +656,12 @@ body {
   /* flex-wrap: wrap; */
 }
 .maincontainer3 {
-  border-top: solid 2px rgb(204, 204, 204);
-  border-bottom: solid 2px rgb(204, 204, 204);
-  border-radius: 25px;
-  border-right: solid 2px rgb(204, 204, 204);
-  width: 95%;
-  margin: 110px auto;
+  /* border-top: solid 10px rgb(253, 253, 253); */
+  /* border-bottom: solid 10px rgb(253, 253, 253); */
+  /* border-radius: 25px; */
+  /* border-right: solid 10px rgb(253, 253, 253); */
+  width: 80%;
+  margin: 110px 140px;
   /* max-width: 960px; */
   /* justify-content: space-between; */
   /* margin-left: 10%; */
@@ -657,7 +846,8 @@ p {
   background-color: rgb(253, 253, 253);
   bottom: 65px;
   padding: 15px;
-  color: rgb(235, 233, 233);
+  color: #666666;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
   font-weight: bold;
   line-height: 20px;
 }
@@ -676,17 +866,19 @@ p {
   padding-left: 40px;
   background-color: rgb(253, 253, 253);
   font-weight: bold;
-  color: rgb(235, 233, 233);
   line-height: 20px;
+  color: #666666;
   width: 50%;
   letter-spacing: 1px;
   text-decoration: none;
 }
 .Label1:hover {
-  background-color: rgb(121, 170, 172);
+  background-color: #666666;
+  color: white;
 }
 .Label2:hover {
-  background-color: rgb(121, 170, 172);
+  background-color: #666666;
+  color: white;
 }
 
 .Label2 {
@@ -695,7 +887,7 @@ p {
   padding-right: 20px;
   background-color: rgb(253, 253, 253);
   font-weight: bold;
-  color: rgb(235, 233, 233);
+  color: #666666;
   line-height: 20px;
   letter-spacing: 1px;
   text-decoration: none;
