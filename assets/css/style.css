@@ -52,7 +52,7 @@ body {
 }
 
 .titleImage3 {
-  height: 80px;
+  height: 120px;
   opacity: 0.9;
 }
 .imagediv {
@@ -135,15 +135,15 @@ body {
   opacity: 1;
 }
 .imagediv3 {
-  width: calc(100% - 285px);
-  margin-left: 215px;
-  margin-top: 0px;
-  height: 80px;
+  width: calc(100% - 30px);
+  margin-left: 15px;
+  margin-top: 15px;
+  height: 120px;
   position: absolute;
   z-index: 10;
   overflow: hidden;
   background-color: rgb(93, 99, 94);
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .titleOfPage {
   width: 100%;
@@ -689,14 +689,14 @@ p {
 .footer2 {
   height: 70px;
   width: 100%;
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(93, 99, 94);
   position: absolute;
   bottom: 0;
 }
 .footer {
-  height: 70px;
+  height: 145px;
   width: 100%;
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(93, 99, 94);
 }
 
 .footerextra {
@@ -726,7 +726,7 @@ p {
   padding: 15px;
 }
 .footpadding {
-  height: 70px;
+  height: 145px;
   margin: 0;
 }
 
@@ -895,9 +895,9 @@ p {
   width: 50%;
 }
 .footer2 {
-  height: 70px;
+  height: 145px;
   width: 100%;
-  background-color: rgb(253, 253, 253);
+  background-color: rgb(93, 99, 94);
   position: absolute;
   bottom: 0;
 }
