@@ -480,18 +480,21 @@
                     </div>
                 </div>
 
+                <div class="footpadding hide"></div>
+
+
+                <div class="footer2">
+
+                    <div class="imagediv3"><img src="https://i.imgur.com/CEics5s.jpg" class="titleImage3"
+                            alt="Graham Thomas">
+                    </div>
+                </div>
             </div>
 
-        </div>
-        <div class="body2 transition"><img src="https://i.imgur.com/GJwZOQq.png" class="sectionheaderimage" /></div>
-        <div class="body3 transition right"> <img src="https://i.imgur.com/iJuGpiG.png" class="sectionheaderimage" />
-        </div>
-        <div class="footpadding hide"></div>
-
-
-        <div class="footer2">
-
-            <div class="imagediv3"><img src="https://i.imgur.com/CEics5s.jpg" class="titleImage3" alt="Graham Thomas">
+            <div class="body2 transition"><img src="https://i.imgur.com/GJwZOQq.png" class="sectionheaderimage" />
+            </div>
+            <div class="body3 transition right"> <img src="https://i.imgur.com/iJuGpiG.png"
+                    class="sectionheaderimage" />
             </div>
         </div>
         <script>
@@ -562,25 +565,58 @@
                 function classadjustments(left, center, right, direction) {
                     console.log("you shouldn't be here");
                     if (direction === "moveright") {
-                        $(center).addClass("right");
-                        $(left).removeClass("left");
+                        $(left).removeClass("displaynone");
+                        $(right).removeClass("displaynone");
+                        $(left).removeClass("transition");
                         $(right).removeClass("transition");
+                        $(left).addClass("left");
+                        $(right).addClass("right");
+                        $(center).addClass("transition");
+                        $(left).addClass("transition");
+                        $(right).addClass("transition");
+                        // $(center).removeClass("displaynone");
+                        $(center).addClass("right");
+                        $(right).removeClass("transition");
+                        // $(right).css("display", "block");
                         $(right).removeClass("right");
                         $(right).addClass("left");
                         setTimeout(function () {
+                            $(left).removeClass("left");
+                        }, 500);
+                        setTimeout(function () {
+                            $(right).addClass("displaynone");
+                            $(center).addClass("displaynone");
                             $(right).addClass("transition");
-                        }, 2000);
+                            // $(center).addClass("displaynone");
+                        }, 500);
 
                     }
                     if (direction === "moveleft") {
+                        $(right).removeClass("displaynone");
+                        $(left).removeClass("displaynone");
+                        $(left).removeClass("transition");
+                        $(right).removeClass("transition");
+                        // $(center).removeClass("displaynone");
+                        $(left).addClass("left");
+                        $(right).addClass("right");
+                        $(center).addClass("transition");
+                        $(left).addClass("transition");
+                        $(right).addClass("transition");
+
                         $(center).addClass("left");
-                        $(right).removeClass("right");
                         $(left).removeClass("transition");
                         $(left).removeClass("left");
                         $(left).addClass("right");
+                        // $("window").css("max-height", "500px");
                         setTimeout(function () {
+                            $(right).removeClass("right");
+                        }, 500);
+                        setTimeout(function () {
+                            $(left).addClass("displaynone");
+                            $(center).addClass("displaynone");
                             $(left).addClass("transition");
-                        }, 2000);
+                            // $(center).addClass("displaynone");
+                        }, 500);
                     }
                 }
                 let timer = true;

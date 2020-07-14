@@ -1,6 +1,8 @@
 #page-conatiner {
   position: relative;
   min-height: 100vh;
+  max-height: 800px;
+  /* overflow-y: hidden; */
 }
 body {
   margin: 0;
@@ -52,7 +54,7 @@ body {
 }
 
 .titleImage3 {
-  height: 120px;
+  height: 110px;
   opacity: 0.9;
 }
 .imagediv {
@@ -570,6 +572,7 @@ body {
   background-color: grey;
 }
 .body1 {
+  display: block;
   position: absolute;
   margin: auto;
   width: 100%;
@@ -580,18 +583,19 @@ body {
 }
 
 .body2 {
+  display: block;
   top: 250px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-
   height: 500px;
   width: 95%;
 }
 
 .body3 {
+  display: block;
   top: 250px;
   position: absolute;
   left: 0;
@@ -600,18 +604,24 @@ body {
   margin-right: auto;
   height: 500px;
   width: 95%;
-
   left: 0px;
 }
 
 .left {
   position: absolute;
   left: -9999px;
+  /* display: none; */
 }
-
+.displaynone {
+  display: none;
+}
+.displayblock {
+  display: block;
+}
 .right {
   position: absolute;
   right: -9999px;
+  /* display: none; */
 }
 
 .transition {
