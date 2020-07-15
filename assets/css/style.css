@@ -1,8 +1,12 @@
 #page-conatiner {
   position: relative;
-  min-height: 100vh;
-  max-height: 800px;
+  min-height: 100%;
   /* overflow-y: hidden; */
+}
+.mainspacerdiv {
+  width: 100%;
+  position: relative;
+  height: 1085px;
 }
 body {
   margin: 0;
@@ -54,15 +58,16 @@ body {
 }
 
 .titleImage3 {
-  height: 110px;
+  height: 90px;
   opacity: 0.9;
+  opacity: 0.8;
 }
 .imagediv {
   width: calc(60vw - 45px);
   margin: 15px;
   height: 120px;
   position: absolute;
-  z-index: 10;
+  z-index: 12;
   overflow: hidden;
   background-color: rgb(93, 99, 94);
   opacity: 1;
@@ -90,7 +95,7 @@ body {
   background-color: black;
   opacity: 0.5;
   height: 100%;
-  z-index: -1;
+  z-index: 10;
 }
 .rightsidebar {
   z-index: 100;
@@ -100,7 +105,7 @@ body {
   top: 0;
   background-color: rgb(93, 99, 94);
   height: 100%;
-  z-index: -1;
+  z-index: 10;
   /* border-left: solid 1px black; */
 }
 .rightsidebar2 {
@@ -111,16 +116,21 @@ body {
   top: 0;
   background-color: rgb(71, 76, 72);
   height: 100%;
-  z-index: -1;
+  z-index: 10;
   /* border-left: solid 1px black; */
 }
 .rightsidebar3 {
   z-index: 100;
   position: absolute;
   right: 4%;
-  width: 18px;
+
   top: 150px;
-  background-color: black;
+
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 60px 18px 0 0;
+  border-color: black transparent transparent transparent;
   height: 60px;
   opacity: 0.5;
   /* border-left: solid 1px black; */
@@ -131,21 +141,19 @@ body {
   margin: 15px;
   height: 120px;
   position: absolute;
-  z-index: 10;
+  z-index: 12;
   overflow: hidden;
   background-color: rgb(93, 99, 94);
   opacity: 1;
 }
 .imagediv3 {
-  width: calc(100% - 30px);
-  margin-left: 15px;
-  margin-top: 15px;
-  height: 120px;
+  width: calc(100% - 20px);
+  border: solid 10px rgb(93, 99, 94);
+  height: 90px;
   position: absolute;
   z-index: 10;
   overflow: hidden;
   background-color: rgb(93, 99, 94);
-  opacity: 0.8;
 }
 .titleOfPage {
   width: 100%;
@@ -197,6 +205,23 @@ body {
   background-color: rgb(93, 99, 94);
   /* border-right: solid 1px rgb(204, 204, 204); */
   /* border-bottom: solid 1px black; */
+}
+.navshadowhider {
+  position: absolute;
+  z-index: 11;
+  width: 50%;
+  height: 150px;
+  background-color: rgb(93, 99, 94);
+}
+.navshadowhider2 {
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  right: 0;
+  top: 0;
+  height: 150px;
+  background-color: rgb(93, 99, 94);
+  /* background-color: brown; */
 }
 
 .titleText {
@@ -573,9 +598,11 @@ body {
 }
 .body1 {
   display: block;
+  padding-top: 40px;
   position: absolute;
   margin: auto;
-  width: 100%;
+  width: calc(92% - 160px);
+  top: 150px;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -583,27 +610,30 @@ body {
 }
 
 .body2 {
+  min-height: 200px;
+  padding-top: 40px;
   display: block;
-  top: 250px;
+  top: 150px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
-  width: 95%;
+  /* height: 500px; */
+  width: calc(92% - 160px);
 }
 
 .body3 {
   display: block;
-  top: 250px;
+  top: 150px;
+  padding-top: 40px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
-  width: 95%;
+  height: 100vh;
+  width: calc(92% - 160px);
   left: 0px;
 }
 
@@ -672,11 +702,11 @@ body {
   /* border-radius: 25px; */
   /* border-right: solid 10px rgb(253, 253, 253); */
   width: 80%;
-  margin: 110px 140px;
+
   /* max-width: 960px; */
   /* justify-content: space-between; */
   /* margin-left: 10%; */
-  margin-top: 70px;
+
   margin-bottom: 10px;
   margin-bottom: 70px;
 }
@@ -697,12 +727,16 @@ p {
 }
 
 .footer2 {
-  height: 70px;
+  height: 50px;
   width: 100%;
   background-color: rgb(93, 99, 94);
   position: absolute;
   bottom: 0;
+  /* z-index: 12; */
+  transition-duration: 0.5s;
+  transition: ease-in-out;
 }
+
 .footer {
   height: 145px;
   width: 100%;
@@ -710,9 +744,34 @@ p {
 }
 
 .footerextra {
-  background-color: grey;
-  height: 5px;
-  width: 100%;
+  position: absolute;
+  left: 4%;
+  top: -30px;
+  background-color: rgb(107, 116, 108);
+  height: 30px;
+  width: calc(92% - 18px);
+  z-index: 1;
+}
+.footertriangle {
+  top: -30px;
+  position: absolute;
+  z-index: 12;
+  left: calc(96% - 18px);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 0 18px;
+  border-color: transparent transparent transparent rgb(107, 116, 108);
+}
+.footertriangle2 {
+  top: -30px;
+  position: absolute;
+  left: 4%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 30px 60px;
+  border-color: transparent transparent rgb(107, 116, 108) transparent;
   z-index: 20;
 }
 
@@ -808,39 +867,41 @@ p {
 .siteTitle {
   margin-top: 20px;
   width: 100%;
-  color: transparent;
+  color: rgb(93, 99, 94);
+  /* color: transparent;
   background: #666666;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5); */
   font-size: 2em;
 }
 .siteText {
   padding-right: 20px;
-  color: transparent;
+  color: rgb(93, 99, 94);
+  /* color: transparent;
   background: #666666;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5); */
 }
 .details {
-  color: transparent;
+  /* color: transparent;
   background: #666666;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
-  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5); */
   position: absolute;
   top: 0px;
   left: 0;
   overflow-y: hidden;
   overflow: hidden;
   max-height: 0;
-  border: solid 1px rgb(204, 204, 204);
+  border: solid 2px rgb(93, 99, 94);
+  border-radius: 4px;
   width: 0px;
-
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(1, 1, 1, 1);
@@ -872,40 +933,70 @@ p {
   transition-duration: 0.5s;
 }
 .Label1 {
+  opacity: 0.95;
   float: left;
   padding: 15px;
   padding-left: 40px;
-  background-color: rgb(253, 253, 253);
+  /* background-color: rgb(253, 253, 253); */
+  background-image: url("https://i.imgur.com/CEics5s.jpg");
+  background-size: cover;
+  /* background-position-y: 10px; */
+  background-repeat: none;
   font-weight: bold;
   line-height: 20px;
-  color: #666666;
+  color: rgb(158, 163, 159);
   width: 50%;
   letter-spacing: 1px;
   text-decoration: none;
+  border-top: solid 6px rgb(93, 99, 94);
+  border-bottom: solid 6px rgb(93, 99, 94);
+  border-left: solid 10px rgb(93, 99, 94);
+  border-right: solid 5px rgb(93, 99, 94);
+}
+.linkwords {
+  display: inline;
+  /* color: white; */
+
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(93, 99, 94);
 }
 .Label1:hover {
-  background-color: #666666;
+  opacity: 1;
   color: white;
 }
 .Label2:hover {
-  background-color: #666666;
+  opacity: 1;
   color: white;
 }
 
 .Label2 {
+  opacity: 0.95;
+  background-image: url("https://i.imgur.com/CEics5s.jpg");
+  background-size: cover;
+  /* background-position-y: 10px; */
+  background-repeat: none;
   text-align: right;
   padding: 15px;
   padding-right: 20px;
   background-color: rgb(253, 253, 253);
   font-weight: bold;
-  color: #666666;
+  color: rgb(158, 163, 159);
   line-height: 20px;
   letter-spacing: 1px;
   text-decoration: none;
-  width: 50%;
+  width: 60%;
+  border-top: solid 6px rgb(93, 99, 94);
+  border-bottom: solid 6px rgb(93, 99, 94);
+  border-left: solid 5px rgb(93, 99, 94);
+  border-right: solid 10px rgb(93, 99, 94);
+  /* -moz-transform: scaleX(-1); */
+  /* -o-transform: scaleX(-1); */
+  /* -webkit-transform: scaleX(-1); */
+  /* transform: scaleX(-1); */
 }
 .footer2 {
-  height: 145px;
+  height: 110px;
   width: 100%;
   background-color: rgb(93, 99, 94);
   position: absolute;
