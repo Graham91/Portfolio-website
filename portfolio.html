@@ -511,6 +511,29 @@
                         </div>
                         <div>
                             <div class="picture">
+                                <div class="hide">
+                                    <div class="mimicdetails">
+                                        <div class="details2">
+                                            <div>
+
+                                                <div class="picturePlaceholder"></div>
+                                                <div class="siteTitle">Heart beat</div>
+                                                <div class="siteText">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit.
+                                                    Sequi
+                                                    nisi consectetur
+                                                    eaque
+                                                    sint
+                                                    inventore accusantium? Quis eos quo obcaecati iure est, fugit
+                                                    veritatis
+                                                    hic!
+                                                    Cumque
+                                                    architecto non porro a sapiente.</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                                 <img src="./assets/images/runway.png" class="picturesize">
                                 <div class="Labelwithsite">
                                     <a href="url" class="Label1" target="_blank">
@@ -601,7 +624,7 @@
                     hitting rocks with sticks and mixing colors on a palete.
                     Fingers in the dirt are for enjoying a sandy beach and picking carrots not for doing things the hard
                     way. Life should be easy and it should only get easier.</p>
-
+                <div id="bodyofwriting"></div>
             </div>
             <div class="body3 transition right displaynone"> <img src="https://i.imgur.com/iJuGpiG.png"
                     class="sectionheaderimage" />
@@ -621,8 +644,19 @@
         </div>
         <script>
             $(document).ready(function () {
+                let currentheight;
                 let bodylocators = [".body1", ".body2", ".body3"];
                 let centerbody = bodylocators[1];
+                currentheight = $(".body2").height() + "px";
+                $(".mainspacerdiv").css("height", currentheight);
+                console.log(currentheight);
+                $("footer2").css("bottom", "0");
+                $(window).resize(function () {
+                    currentheight = $(centerbody).height() + "px";
+                    $(".mainspacerdiv").css("height", currentheight);
+                    console.log(currentheight);
+                    $("footer2").css("bottom", "0");
+                });
                 $(".ptext").on("click", function () {
                     console.log("inclickevent");
                     $(".portfoliodiv").css("left", "0");
@@ -700,6 +734,7 @@
                     }
                     runOneOnly = true;
                 }
+
 
                 function classadjustments(left, center, right, direction) {
                     console.log("you shouldn't be here");
@@ -790,6 +825,10 @@
                     $(".details2", this).css("max-height", "500px");
                     $(".details2", this).css("width", "calc(92vw - 160px)");
                     // $(".details", this).css("margin-bottom", "-300px");
+                    currentheight = $(".body1").height() + "px";
+                    $(".mainspacerdiv").css("height", currentheight);
+                    console.log(currentheight);
+                    $("footer2").css("bottom", "0");
 
 
 
@@ -814,6 +853,10 @@
                     $(".details2", this).css("top", "0px");
                     $(".details2", this).css("max-height", "0px");
                     $(".details2", this).css("width", "0");
+                    currentheight = $(".body1").height() + "px";
+                    $(".mainspacerdiv").css("height", currentheight);
+                    console.log(currentheight);
+                    $("footer2").css("bottom", "0");
                     // $(".siteTitle").css("display", "none");
                     // $(".siteText").css("display", "none");
                     setTimeout(function () { $(".fixStupidFlicker").css("display", "none"); }, 500);

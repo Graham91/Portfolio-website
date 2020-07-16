@@ -26,6 +26,10 @@ body {
   /* background-repeat: no-repeat; */
   /* background-attachment: fixed; */
 }
+#bodyofwriting {
+  height: 100px;
+  width: 100%;
+}
 .outsidediv {
   /* position: fixed;
   width: 100%;
