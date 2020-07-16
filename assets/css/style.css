@@ -1002,12 +1002,208 @@ p {
   position: absolute;
   bottom: 0;
 }
+.babyImage {
+  width: 90%;
+  margin: 5%;
+  opacity: 0.8;
+}
+
+.navTitle14 {
+  width: 100%;
+  height: 100px;
+}
+
+.imagediv4 {
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  z-index: 10;
+  overflow: hidden;
+  background-color: rgb(93, 99, 94);
+  opacity: 1;
+}
+
+.titleImage4 {
+  height: 80px;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  opacity: 0.8;
+}
+
+.equalatoraltriangle {
+  display: none;
+  top: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-style: solid;
+  border-width: 0 100px 86.6px 100px;
+  border-color: transparent transparent #007bff transparent;
+  padding-bottom: 86.6%;
+}
+
+.centerpicturediv {
+  display: inline-block;
+  position: relative;
+}
+
+.square1 {
+  position: absolute;
+  height: 10px;
+  width: 30%;
+  background-color: black;
+  right: 46.5%;
+  top: 41.75%;
+  z-index: 10;
+  transform: rotate(395deg);
+}
+
+.bottombutton {
+  position: absolute;
+  top: 50.3%;
+  width: 36%;
+  left: 31.85%;
+  filter: brightness(130%) contrast(97%);
+}
+
+.leftbutton {
+  position: absolute;
+  left: 28.75%;
+  top: 29.7%;
+  width: 20.7%;
+  filter: brightness(130%) contrast(97%);
+}
+
+.rightbutton {
+  position: absolute;
+  top: 29.7%;
+  left: 50.25%;
+  width: 20.7%;
+  filter: brightness(130%) contrast(97%);
+}
+
+.porfolioP {
+  position: absolute;
+  top: 38%;
+  left: 36%;
+  color: black;
+  padding: 10px;
+  border: solid 1px black;
+  font-size: 2em;
+  border-radius: 15px;
+}
+
+.porfolioP:hover {
+  color: white;
+}
+
+.center {
+  position: absolute;
+  top: 25%;
+  margin: 10px;
+  /* left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.ptext {
+  left: 33%;
+  top: 38%;
+  width: 15%;
+  position: absolute;
+}
+
+.ctext {
+  left: 52%;
+  top: 38%;
+  width: 15%;
+  position: absolute;
+}
+
+.htext {
+  left: 38%;
+  top: 55%;
+  width: 20%;
+  position: absolute;
+}
+
+.homediv {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(158, 163, 159);
+  position: fixed;
+  bottom: -9999px;
+  z-index: 10;
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+
+.contactdiv {
+  height: 100%;
+  top: 0;
+  width: 100%;
+  background-color: rgb(158, 163, 159);
+  position: fixed;
+  right: -9999px;
+  z-index: 10;
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+
+.portfoliodiv {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgb(158, 163, 159);
+  position: fixed;
+  left: -9999px;
+  z-index: 10;
+  transition: ease-in-out;
+  transition-duration: 1s;
+}
+
+.close {
+  clear: both;
+  color: #333333;
+  display: flex;
+  margin: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  float: right;
+}
 
 .dropdown-content {
   display: none;
 }
 .dropbtn {
   display: none;
+}
+.smallscreenfull {
+  display: none;
+}
+@media only screen and (max-width: 625px) {
+  #page-conatiner {
+    display: none;
+  }
+  body {
+    width: 100%;
+    background-color: rgb(93, 99, 94);
+    margin: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .smallscreenfull {
+    display: block;
+  }
 }
 @media screen and (max-width: 680px) {
   .headlinks {
