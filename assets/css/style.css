@@ -8,7 +8,9 @@
   position: relative;
   height: 1085px;
 }
+
 body {
+  color: rgb(93, 99, 94);
   margin: 0;
   font-family: Candara;
   overflow-x: hidden;
@@ -1146,16 +1148,22 @@ p {
   width: 20%;
   position: absolute;
 }
-
+.picturesmall {
+  width: 75%;
+  max-width: 310px;
+  margin-top: 10px;
+}
 .homediv {
   height: 100%;
-  width: 100%;
+  width: calc(100% - 20px);
   background-color: rgb(158, 163, 159);
   position: fixed;
   bottom: -9999px;
   z-index: 10;
+  overflow-y: auto;
   transition: ease-in-out;
   transition-duration: 1s;
+  padding: 10px;
 }
 
 .contactdiv {
@@ -1172,24 +1180,28 @@ p {
 
 .portfoliodiv {
   height: 100%;
-  width: 100%;
+  width: calc(100% - 20px);
   top: 0;
   background-color: rgb(158, 163, 159);
   position: fixed;
   left: -9999px;
   z-index: 10;
+  overflow-y: auto;
+  padding: 10px;
   transition: ease-in-out;
   transition-duration: 1s;
 }
 
 .close {
   clear: both;
+  position: fixed;
   color: #333333;
-  display: flex;
-  margin: 10px;
+  display: none;
+  /* margin: 10px; */
   font-size: 40px;
   font-weight: bold;
-  float: right;
+  /* top: 10px; */
+  right: 20px;
 }
 
 .dropdown-content {
