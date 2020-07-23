@@ -28,7 +28,7 @@ body {
   /* background-repeat: no-repeat; */
   /* background-attachment: fixed; */
 }
-#bodyofwriting {
+.bodyofwriting {
   height: 100px;
   width: 100%;
 }
@@ -1175,6 +1175,7 @@ p {
   right: -9999px;
   z-index: 10;
   transition: ease-in-out;
+  overflow-y: auto;
   transition-duration: 1s;
 }
 
@@ -1192,12 +1193,15 @@ p {
   transition-duration: 1s;
 }
 .contactimages {
+  color: rgb(93, 99, 94);
+  text-decoration: none;
   transition: all 0.3s ease;
   margin: 15px;
   position: relative;
   font-size: 10em;
   display: inline;
 }
+
 .contactwhole {
   width: 100%;
   /* margin: 0 auto; */
