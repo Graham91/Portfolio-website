@@ -228,7 +228,7 @@ body {
 
 .navTitle {
   position: relative;
-  width: 50%;
+  width: calc(50% - 4px);
   height: 150px;
   background-color: rgb(93, 99, 94);
   /* border-right: solid 1px rgb(204, 204, 204); */
@@ -401,7 +401,7 @@ body {
 
 .bottomShadow12 {
   top: 150px;
-  left: calc(90% - 0.5px);
+  left: calc(90% - 1px);
   position: absolute;
   width: 0;
   height: 0;
@@ -431,7 +431,7 @@ body {
   height: 0;
   border-style: solid;
   border-width: 30px 0 0 15px;
-  border-color: transparent transparent transparent #000000;
+  border-color: transparent transparent transparent black;
   opacity: 0.5;
   z-index: -1;
 }
@@ -473,7 +473,7 @@ body {
   top: 150px;
   left: calc(4% + 60px);
   position: absolute;
-  width: calc(56% - 62.5px);
+  width: calc(56% - 64px);
   height: 60px;
   background-color: black;
   opacity: 0.5;
@@ -482,9 +482,9 @@ body {
 
 .bottomShadow13 {
   top: 150px;
-  left: calc(90% + 29.5px);
+  left: calc(90% + 29px);
   position: absolute;
-  width: calc(10% - 29.5px);
+  width: calc(10% - 29px);
   height: 60px;
   background-color: black;
   opacity: 0.5;
@@ -513,7 +513,7 @@ body {
 
 .bottomShadow10 {
   top: 150px;
-  left: calc(60% - 2.5px);
+  left: calc(60% - 4px);
   position: absolute;
   width: 0;
   height: 0;
@@ -532,7 +532,7 @@ body {
   height: 0;
   border-style: solid;
   border-width: 0 5px 10px 0;
-  border-color: transparent black transparent transparent;
+  border-color: transparent #000000 transparent transparent;
   opacity: 0.5;
   z-index: -1;
 }
@@ -545,7 +545,7 @@ body {
   height: 0;
   border-style: solid;
   border-width: 0 10px 20px 0;
-  border-color: transparent black transparent transparent;
+  border-color: transparent #000000 transparent transparent;
   opacity: 0.5;
   z-index: -1;
 }
