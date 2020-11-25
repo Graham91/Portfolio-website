@@ -105,6 +105,9 @@ hr {
   height: 110px;
   /* opacity: 0.9; */
   opacity: 0.85;
+  background-image: url("https://i.imgur.com/CEics5s.jpg");
+  background-repeat: repeat-x;
+  background-size: 2022px 110px;
 }
 .imagediv {
   width: calc(60vw - 45px);
