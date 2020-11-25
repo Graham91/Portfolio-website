@@ -625,7 +625,7 @@ body {
   /* margin-top: 250px; */
   margin-right: 20px;
   margin-bottom: 5px;
-  border: inset 10px rgb(93, 99, 94);
+  border: solid 10px rgb(55, 61, 57);
   opacity: 0.8;
   float: left;
   clear: both;
