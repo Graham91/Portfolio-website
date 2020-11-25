@@ -342,7 +342,7 @@
                         <div class="barside4"></div>
                     </div>
                     <div class="demotext">
-                        Portfolio
+                        Home
                     </div>
                 </div>
                 <div class="navKey" id=".body2">
@@ -378,7 +378,7 @@
                         <div class="barside4"></div>
                     </div>
                     <div class="demotext">
-                        Home
+                        Portfolio
                     </div>
                 </div>
                 <div class="navKey" id=".body3">
@@ -455,7 +455,7 @@
             <div class="leftsideshadow"></div>
             <div class="mainspacerdiv"></div>
 
-            <div class="body1 transition left displaynone">
+            <div class="body2 transition">
                 <div class="maincontainer3">
                     <div>
                         <!-- <div class="titleOfPage">
@@ -1070,10 +1070,11 @@
 
             </div>
 
-            <div class="body2 transition"><img src="https://i.imgur.com/GJwZOQq.png" class="sectionheaderimage" />
+            <div class="body1 transition left displaynone"><img src="https://i.imgur.com/GJwZOQq.png"
+                    class="sectionheaderimage" />
                 <div>
 
-                    <img id="size" src="./assets/images/IMGWEB.png">
+                    <img id="size" src="https://i.imgur.com/vwH5kat.png">
                     <!-- <hr> -->
                     <h3>
                         Name: Graham Thomas
@@ -1223,6 +1224,7 @@
                     console.log(currentheight);
                     $("footer2").css("bottom", "0");
                 });
+
                 $(".ptext").on("click", function () {
                     console.log("inclickevent");
                     $(".portfoliodiv").css("left", "0");
@@ -1401,8 +1403,10 @@
                     $(".details2", this).css("max-height", "900px");
                     // $(".details2", this).css("width", "calc(92vw - 160px)");
                     // $(".details", this).css("margin-bottom", "-300px");
-                    currentheight = $(".body1").height() + "px";
-                    $(".mainspacerdiv").css("height", currentheight);
+                    setTimeout(function () {
+                        currentheight = $(".body2").height() + "px";
+                        $(".mainspacerdiv").css("height", currentheight);
+                    }, 500);
                     console.log(currentheight);
                     $("footer2").css("bottom", "0");
 
@@ -1429,13 +1433,16 @@
                     $(".details2", this).css("top", "0px");
                     $(".details2", this).css("max-height", "0px");
                     // $(".details2", this).css("width", "0");
-                    currentheight = $(".body1").height() + "px";
-                    $(".mainspacerdiv").css("height", currentheight);
                     console.log(currentheight);
                     $("footer2").css("bottom", "0");
                     // $(".siteTitle").css("display", "none");
                     // $(".siteText").css("display", "none");
-                    setTimeout(function () { $(".fixStupidFlicker").css("display", "none"); }, 500);
+                    setTimeout(function () {
+                        currentheight = $(".body2").height() + "px";
+                        // $(".mainspacerdiv").css("height", currentheight);
+                        $(".mainspacerdiv").css("height", currentheight);
+                        $(".fixStupidFlicker").css("display", "none");
+                    }, 500);
 
                     // $(".picturePlaceholder").css("display", "none");      
 

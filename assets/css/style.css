@@ -6,7 +6,7 @@
 .mainspacerdiv {
   width: 100%;
   position: relative;
-  height: 1085px;
+  height: 2537px;
 }
 body {
   color: rgb(93, 99, 94);
@@ -102,9 +102,9 @@ hr {
 }
 
 .titleImage3 {
-  height: 90px;
-  opacity: 0.9;
-  opacity: 0.8;
+  height: 110px;
+  /* opacity: 0.9; */
+  opacity: 0.85;
 }
 .imagediv {
   width: calc(60vw - 45px);
@@ -192,13 +192,14 @@ hr {
   opacity: 1;
 }
 .imagediv3 {
-  width: calc(100% - 20px);
-  border: solid 10px rgb(93, 99, 94);
-  height: 90px;
+  width: calc(100% - 30px);
+  border: solid 15px rgb(93, 99, 94);
+  height: 105px;
   position: absolute;
   z-index: 10;
   overflow: hidden;
-  background-color: rgb(93, 99, 94);
+  /* background-color: rgb(93, 99, 94); */
+  background-color: rgb(89, 95, 89);
 }
 .titleOfPage {
   width: 100%;
@@ -619,10 +620,13 @@ body {
 }
 #size {
   width: 50%;
-  max-width: 350px;
+  max-width: 310px;
   /* height: 50%; */
   /* margin-top: 250px; */
-  margin-right: 10px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  border: inset 10px rgb(93, 99, 94);
+  opacity: 0.8;
   float: left;
   clear: both;
 }
